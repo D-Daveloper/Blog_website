@@ -26,7 +26,7 @@ nav{
 .nav-container p {
     font-weight: 800;
 }
-ul{
+.desktop-nav{
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -40,7 +40,7 @@ ul a{
 
 li{
     list-style: none;
-    position: relative;
+    /* position: relative; */
 }
 
 li::after{
@@ -81,6 +81,61 @@ nav h1{
     text-transform: capitalize;
 }
 
+.close{
+    display: none;
+}
+.close-button{
+    display: none;
+}
+
+.moblie-nav{
+    display: flex;
+    flex-direction: column;
+    background-color: #003031;
+    width: 100%;
+    height: 0;
+    text-decoration: none;
+    color: #EFEFEF;
+    font-family: "Rubik";
+    font-weight: 100;
+    align-items: center;
+    font-size: 24px;
+    text-transform: capitalize;
+    z-index: 9999999;
+    position: absolute;
+    opacity: 80%;
+    transition: all 0.5s ease-in-out;
+}
+
+.open{
+    height: 100%;
+    display: flex;
+}
+
+.moblie-nav-compo{
+    margin: 30px 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.clear{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (max-width:750px) {
+    .nav-container{
+        background-color: #003031;
+        width: 100%;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .menu-button{
+        display: flex;
+    }
+}
 .body{
     width: 80%;
     margin: 0 auto;
@@ -134,7 +189,7 @@ nav h1{
 
 .side-posts > div:first-of-type{
     width: 300px;
-    height: 150px;
+    height: clamp(150px,160px,160px);
     /* flex: 1; */
     border-radius: 20px;
 }
