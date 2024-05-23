@@ -42,8 +42,11 @@ li{
     list-style: none;
     /* position: relative; */
 }
+.nav-compo{
+    position: relative;
+}
 
-li::after{
+.nav-compo::after{
     content: "";
     position: absolute;
     background-color: #EFEFEF;
@@ -54,7 +57,7 @@ li::after{
     transition: 0.2s ;
 }
 
-li:hover::after{
+.nav-compo:hover::after{
     width: 100%;
 }
 .nav-overlay{
@@ -79,6 +82,9 @@ nav h1{
     font-size: 2vw;
     font-weight: 500;
     text-transform: capitalize;
+}
+.menu-button{
+    display: none;
 }
 
 .close{
