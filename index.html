@@ -54,7 +54,7 @@
                             <p>6 Min READ</p>
                             <div class="side-button-div">
                                 <p>23rd April, 2024</p>
-                                <button>read more</button>
+                                <button class="post_button">read more</button>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                             </div>
                             <div class="side-button-div">
                                 <p>23rd April, 2024</p>
-                                <button>read more</button>
+                                <button class="post_button">read more</button>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                                 one vibe killer</h3>
                             <div class="side-button-div">
                                 <p>23rd April, 2024</p>
-                                <button>read more</button>
+                                <button class="post_button">read more</button>
                             </div>
                         </div>
                     </div>
@@ -103,14 +103,40 @@
                                 one vibe killer</h3>
                             <div class="side-button-div">
                                 <p>23rd April, 2024</p>
-                                <button>read more</button>
+                                <button class="post_button">read more</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <a href="" class="see_posts">see all posts</a>
         </section>
     </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_header">
+                <div>
+                    <h3>Never miss an update</h3>
+                    <p>Subscribe to my newsletter</p>            
+                </div>
+                <div class="form">
+                    <form id="subscribeForm" action="/subscribe" method="POST">
+                        <input id="emailInput" type="email" placeholder="Your Email Address" name="Email" autocomplete="off">
+                        <button type="submit" value="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>@Blog name</li>
+                    <li>Terms of service</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies Policy</li>
+                    <li>Legal Notice</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="./public/blog.js"></script>
 </body>
 </html>
