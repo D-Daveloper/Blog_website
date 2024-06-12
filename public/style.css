@@ -396,6 +396,9 @@ footer ul {
     footer form input{
         width: 20vw;
     }
+    footer form input::placeholder{
+        font-size: 2vw;
+    }
     .footer_header > div > h3 {
         font-size: 4vw;
      }
@@ -417,6 +420,9 @@ footer ul {
     }
     footer form input{
         width: 60%;
+    }
+    footer form input::placeholder{
+        font-size: 3vw;
     }
     .footer_header > div > h3 {
         font-size: 5vw;
